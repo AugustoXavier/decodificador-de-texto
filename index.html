@@ -24,11 +24,11 @@
         <div class="container">
 
             <!-- <label for="input-text">Digite o texto que deseja criptografar ou descriptografar:</label> -->
-            <textarea class="encrypt" id="input-text" name="input-text" rows="5" cols="50">Digite seu texto:</textarea>
+            <textarea class="encrypt" id="input-text" name="input-text" rows="5" cols="50" placeholder="Digite seu texto:"></textarea>
 
 
             <!-- <label for="output-text">Texto criptografado ou descriptografado:</label> -->
-            <textarea class="decrypt" id="xoutput-tet" name="output-text" rows="5" cols="50" readonly></textarea>
+            <textarea class="decrypt" id="output-text" name="output-text" rows="5" cols="50" readonly></textarea>
 
         </div>
 
@@ -36,10 +36,12 @@
 
             <button class="bottons darkblue-300" id="encrypt-btn">Criptografar</button>
             <button class="bottons blue" id="decrypt-btn">Descriptografar</button>
+            <button id="copy">Copiar</button>
 
         </div>
     </main>
 
 
 </body>
+<script src="index.js"></script>
 </html>

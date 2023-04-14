@@ -1,17 +1,8 @@
-let input = document.getElementById("input-text");
+let input = document.getElementById("input-text")
 let output = document.getElementById("output-text");
 let encrypt = document.getElementById("encrypt-btn");
 let decrypt = document.getElementById("decrypt-btn");
-
-const keys = {
-    "e":"enter",
-    "i":"imes",
-    "a":"ai",
-    "o":"ober",
-    "u":"ufat"
-};
-
-
+let copy = document.getElementById("copy")
 
 const Cryptography = (text)=>{
     const keys = {
@@ -51,7 +42,23 @@ const Decryption = (text) => {
 
 
 
-console.log(Cryptography("parabens por encarar esse desafio e ter finalizado ele com sucesso!"))
-console.log(Decryption("pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"))
+
+  encrypt.addEventListener("click",()=>{
+output.innerHTML = `${Cryptography(input.value)}`
+input.value =""
+})
+
+decrypt.addEventListener("click",()=>{
+    output.innerHTML = `${Decryption(input.value)}`
+    input.value =""
+    })
+
+copy.addEventListener("click",()=>{
+    output.select();
+    document.execCommand("copy");
+  })
+
+//console.log(Cryptography("parabens por encarar esse desafio e ter finalizado ele com sucesso!"))
+
 
 
