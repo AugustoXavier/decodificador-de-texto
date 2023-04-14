@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgb(233,236,248,1)
+    /* justify-content: center; */
+
+
+}
+
+main{
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+textarea{
+    resize:none;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.encrypt{
+    height: 25rem;
+    width: 20rem;
+    /* background-image: url(input.PNG.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+
+.decrypt{
+    /* flex: 1; */
+    height: 26rem;
+    width: 20rem;
+
+
+}
+
+.bottons{
+
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    }
+.darkblue-300{
+   background:rgba(10, 56, 113, 1);
+}
+.blue{
+    background: rgba(216, 223, 232, 1);
+}

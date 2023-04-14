@@ -18,19 +18,28 @@
 
     </header>
 
-    <main>
+    <main class="">
 
-        <label for="input-text">Digite o texto que deseja criptografar ou descriptografar:</label>
-        <br>
-        <textarea id="input-text" name="input-text" rows="5" cols="50"></textarea>
-        <br><br>
-        <button id="encrypt-btn">Criptografar</button>
-        <button id="decrypt-btn">Descriptografar</button>
-        <br><br>
-        <label for="output-text">Texto criptografado ou descriptografado:</label>
-        <br>
-        <textarea id="output-text" name="output-text" rows="5" cols="50" readonly></textarea>
+
+        <div class="container">
+
+            <!-- <label for="input-text">Digite o texto que deseja criptografar ou descriptografar:</label> -->
+            <textarea class="encrypt" id="input-text" name="input-text" rows="5" cols="50">Digite seu texto:</textarea>
+
+
+            <!-- <label for="output-text">Texto criptografado ou descriptografado:</label> -->
+            <textarea class="decrypt" id="xoutput-tet" name="output-text" rows="5" cols="50" readonly></textarea>
+
+        </div>
+
+        <div class="">
+
+            <button class="bottons darkblue-300" id="encrypt-btn">Criptografar</button>
+            <button class="bottons blue" id="decrypt-btn">Descriptografar</button>
+
+        </div>
     </main>
+
 
 </body>
 </html>
