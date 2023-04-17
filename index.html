@@ -21,24 +21,27 @@
     <main class="">
 
 
-        <div class="container">
+        <div class="container  border">
+            <div>
+                <!-- <label for="input-text">Digite o texto que deseja criptografar ou descriptografar:</label> -->
+                <textarea class="encrypt textarea1" id="input-text" name="input-text" rows="5" cols="50" placeholder="Digite seu texto:"></textarea>
+                <p class="m gray-400 adv"><span class="icon warning">&#33;</span> Apenas letras minúsculas e sem acento.</p>
+                <div class="bottont">
 
-            <!-- <label for="input-text">Digite o texto que deseja criptografar ou descriptografar:</label> -->
-            <textarea class="encrypt" id="input-text" name="input-text" rows="5" cols="50" placeholder="Digite seu texto:"></textarea>
+                    <button class="bottons darkblue-300" id="encrypt-btn">Criptografar</button>
+                    <button class="bottons blue" id="decrypt-btn">Descriptografar</button>
+                 </div>
 
+            </div>
+        </div>
 
+        <div class=" container decrypt margin-left ">
             <!-- <label for="output-text">Texto criptografado ou descriptografado:</label> -->
-            <textarea class="decrypt" id="output-text" name="output-text" rows="5" cols="50" readonly></textarea>
-
+            <textarea class="textarea2" id="output-text" name="output-text" rows="5" cols="50" readonly></textarea>
+            <button class="bottons blue" id="copy">Copiar</button>
         </div>
 
-        <div class="">
 
-            <button class="bottons darkblue-300" id="encrypt-btn">Criptografar</button>
-            <button class="bottons blue" id="decrypt-btn">Descriptografar</button>
-            <button id="copy">Copiar</button>
-
-        </div>
     </main>
 
 
