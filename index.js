@@ -39,18 +39,34 @@ const Decryption = (text) => {
     return newtext;
   }
 
+const hasUpper = (str) => /[A-Z]/.test(str);
 
+encrypt.addEventListener("click",()=>{
+    if (hasUpper(input.value)) {
+      adv.style.color = "red"
+      icon.style.backgroundColor= "red"
 
+    } else {
+      output.innerHTML = `${Cryptography(input.value)}`
+      input.value =""
+      output.style.display = "block";
+      msgadv.style.display = "none"
+      copy.style.display = "block";
 
-
-  encrypt.addEventListener("click",()=>{
-output.innerHTML = `${Cryptography(input.value)}`
-input.value =""
+    }
 })
 
 decrypt.addEventListener("click",()=>{
-    output.innerHTML = `${Decryption(input.value)}`
-    input.value =""
+    if (hasUpper(input.value)) {
+      adv.style.color = "red"
+      icon.style.backgroundColor= "red"
+
+    } else {
+      output.innerHTML = `${Decryption(input.value)}`
+      input.value =""
+
+    }
+
     })
 
 copy.addEventListener("click",()=>{
@@ -59,6 +75,7 @@ copy.addEventListener("click",()=>{
   })
 
 //console.log(Cryptography("parabens por encarar esse desafio e ter finalizado ele com sucesso!"))
+
 
 
 
