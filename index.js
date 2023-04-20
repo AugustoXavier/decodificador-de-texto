@@ -39,10 +39,12 @@ const Decryption = (text) => {
     return newtext;
   }
 
-const hasUpper = (str) => /[A-Z]/.test(str);
+const hasUpper =   (str) => /[A-Z]/.test(str);
+const hasAccented = (str) => /[à-ü]/.test(str);
+
 
 encrypt.addEventListener("click",()=>{
-    if (hasUpper(input.value)) {
+    if (hasUpper(input.value) || hasAccented(input.value)) {
       adv.style.color = "red"
       icon.style.backgroundColor= "red"
 
@@ -57,7 +59,7 @@ encrypt.addEventListener("click",()=>{
 })
 
 decrypt.addEventListener("click",()=>{
-    if (hasUpper(input.value)) {
+    if (hasUpper(input.value) || hasAccented(input.value)) {
       adv.style.color = "red"
       icon.style.backgroundColor= "red"
 
