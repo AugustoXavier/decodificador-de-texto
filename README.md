@@ -16,7 +16,7 @@ Tecnologias Utilizadas:
 
 Como utilizar:
 
-Para utilizar a aplicação, basta acessar o seguinte link: https://seu-link-aqui.com. Em seguida, insira o texto que deseja codificar ou decodificar e selecione o algoritmo de criptografia desejado. Clique em "Criptografar" ou "Descriptografar" e o resultado será exibido na tela.
+Para utilizar a aplicação, basta acessar o seguinte link:https://augustoxavier.github.io/decodificador-de-texto/. Em seguida, insira o texto que deseja codificar ou decodificar e selecione o algoritmo de criptografia desejado. Clique em "Criptografar" ou "Descriptografar" e o resultado será exibido na tela.
 
 Como contribuir:
 
