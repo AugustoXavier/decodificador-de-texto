@@ -23,4 +23,4 @@ Como contribuir:
 Este projeto foi desenvolvido como parte do curso de programação da ONE – Oracle Next Education e, se você tiver alguma sugestão ou encontrar algum bug, fique à vontade para entrar em contato com o autor do projeto.
 
 Autor
-Este projeto foi desenvolvido por Augusto Xavier.
+deste projeto foi desenvolvido por Augusto Xavier.
