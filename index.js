@@ -76,8 +76,6 @@ copy.addEventListener("click",()=>{
     document.execCommand("copy");
   })
 
-//console.log(Cryptography("parabens por encarar esse desafio e ter finalizado ele com sucesso!"))
-
 
 
 
